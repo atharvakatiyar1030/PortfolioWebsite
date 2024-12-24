@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atharva Katiyar - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Applying the ease-in animation to the body */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            opacity: 0; /* Initially hidden */
+            transform: translateY(20px); /* Slightly moved down */
+            animation: fadeInEase 1s forwards; /* Apply animation */
+        }
+
+        /* Define keyframes for the fade-in and ease-in effect */
+        @keyframes fadeInEase {
+            0% {
+                opacity: 0;
+                transform: translateY(20px); /* Start slightly below */
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0); /* End in original position */
+            }
+        }
+
+        header {
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 0;
+            font-weight: 300;
+        }
+
+        nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            font-size: 1rem;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s;
+        }
+
+        nav a:hover {
+            border-bottom: 2px solid #20c997;
+        }
+
+        .social-icons {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #20c997;
+        }
+
+        .profile-image {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            max-height: 80%;
+            max-width: 30%;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 10px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Atharva Katiyar</h1>
+    <p>I'm a Developer</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="social-icons">
+    <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+</div>
+
+<!-- <img src="profile-placeholder.jpg" alt="Atharva Katiyar" class="profile-image"> -->
+
+<footer>
+    &copy; 2024 Atharva Katiyar. All rights reserved.
+</footer>
+
+</body>
+</html>

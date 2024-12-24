@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #000;
+            color: #fff;
+            height: 100vh;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInEase 1s forwards;
+        }
+        @keyframes fadeInEase {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            font-size: 1rem;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s;
+        }
+
+        nav a:hover {
+            border-bottom: 2px solid #20c997;
+        }
+
+        .about-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .about-section p.intro {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+
+        .about-section h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            margin: 0;
+            position: relative;
+            display: inline-block;
+        }
+
+        .about-section h1::after {
+            content: '';
+            display: block;
+            width: 50%;
+            height: 4px;
+            background-color: #20c997;
+            margin: 10px auto 0;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .content img {
+            max-width: 300px;
+            border-radius: 8px;
+            margin: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .details {
+            max-width: 900px;
+            
+        }
+
+        .details h2 {
+            font-size: 1.3rem;
+            margin-bottom: -13px;
+            font-weight: 600;
+        }
+
+        .des {
+            font-size: 1rem;
+            color: #aaa;
+            margin-bottom: 20px;
+        }
+        .meet
+        {
+            font-size: 1.2rem;
+            color: #20c997;
+            margin-bottom: 20px;
+        }
+        .Resume {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #20c997;
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+        }
+
+        .details a:hover {
+            background-color: #17a589;
+        }
+
+        .info {
+            margin-top: 20px;
+            text-align: left;
+            display: flex;
+            gap: 100px;
+        }
+
+        .info div {
+            margin-bottom: 10px;
+            color: #aaa;
+        }
+        .info div a{
+            color: #20c997;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #fff;
+        }
+        .endline
+        {
+            display: flex;
+            gap: 200px;
+        }
+        footer {
+            position: absolute;
+            bottom: 10px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .social-icons {
+            /* position: absolute;
+            bottom: 20px;
+            left: 20px; */
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            gap: 30px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        /* .social-icons a:hover {
+            color: #20c997;
+        } */
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section class="about-section">
+    <p class="intro">Let me introduce myself</p>
+    <h1>About Me</h1>
+</section>
+
+<div class="content">
+    <img src="b2.webp" alt="Michael Yeates in black and white, cycling gear.">
+    <div class="details">
+        <p class="meet">Nice to meet you</p>
+        <h2>1st year Computer Science | KIET Group of Institutions</h2>
+        <p class="des">My unique blend of technical expertise, creative thinking, and background in computer science allows me to approach each project with a deep understanding of the end user's perspective, resulting in highly effective user-centered digital products.</p>
+        <hr>
+        <div class="info">
+            <div >
+            <div><span class="highlight">Name:</span> Atharva Katiyar</div>
+            <div><span class="highlight">Location:</span> Ghaziabad, UP</div>
+            </div>
+            <div>
+            
+            <div><span class="highlight">Email:</span> <a href="mailto:atharvakatiyar12345@gmail.com">atharvakatiyar@gmail.com</a></div>
+            <div><span class="highlight">Availability:</span> Open for work</div>
+            </div>
+        </div>
+        <div class="endline">
+            <a href="#" class="Resume">Download Resume</a>
+            <div class="social-icons">
+                <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<footer>
+    <p>&copy; 2024 Michael Yeates. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
